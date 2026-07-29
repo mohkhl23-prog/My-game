@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://c0g8xilrdaa42"]
+
+[ext_resource type="Texture2D" uid="uid://dubo8ffcmquim" path="res://Game assets/Cars/cars_1.png" id="1_js6wk"]
+[ext_resource type="Script" uid="uid://cxc4tw0f2u06k" path="res://Game assets/ai_car.gd" id="1_mqmdg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4flbx"]
+radius = 1.0
+height = 3.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_js6wk"]
+atlas = ExtResource("1_js6wk")
+region = Rect2(96, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t3yej"]
+atlas = ExtResource("1_js6wk")
+region = Rect2(112, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sh265"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_js6wk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t3yej")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AI_Car" type="PathFollow2D" unique_id=992216401]
+script = ExtResource("1_mqmdg")
+
+[node name="AI_Carphysics" type="CharacterBody2D" parent="." unique_id=1247225329]
+rotation = 1.5707964
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AI_Carphysics" unique_id=825838628]
+shape = SubResource("CapsuleShape2D_4flbx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AI_Carphysics" unique_id=2048703784]
+scale = Vector2(0.1411972, 0.14891109)
+sprite_frames = SubResource("SpriteFrames_sh265")
