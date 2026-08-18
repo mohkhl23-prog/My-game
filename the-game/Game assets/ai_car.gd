@@ -1,7 +1,7 @@
 extends PathFollow2D
 @export var max_speed :float = 300.0
 @export var laps :int = 0
-@export var acceleration :float = 0.5
+@export var acceleration :float = 2.0
 
 var speed : float 
 

@@ -40,8 +40,8 @@ func apply_steering(steer,delta):
 		return
 	rotation_degrees+=steer*steer_speed*delta
 	
-func on_chickpoint(chickpoint_number):
-	if chickpoint_number == 0 and last_Checkpoint == total_checkpoint:
+func on_checkpoint(checkpoint_number):
+	if checkpoint_number == 0 and last_Checkpoint == total_checkpoint:
 		laps +=1
 		print("lap", laps )
-		last_Checkpoint = chickpoint_number
+		last_Checkpoint = checkpoint_number
