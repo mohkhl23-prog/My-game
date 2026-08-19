@@ -15,6 +15,10 @@ run/main_scene="uid://cva8suq62vo3b"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[global_group]
+
+player=""
+
 [input]
 
 brake={

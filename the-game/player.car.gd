@@ -10,7 +10,7 @@ var laps : int = 1
 @export var max_laps : int = 3
 @export var total_checkpoint : int = 4
 
-
+@export var lap_counter : Label
 var speed :float = 0.0
 
 func _physics_process(delta: float) -> void:
@@ -30,10 +30,10 @@ func apply_throttle(throttle, delta):
 		speed -= brake_force * abs(throttle) * delta
 	else:
 		
-		
 		speed = move_toward(speed, 0.0, friction * delta)
-	
+		
 	speed = clamp(speed,-max_speed*0.3,max_speed)
+	
 		
 func apply_steering(steer,delta):
 	if abs(speed)<10.0:
@@ -42,6 +42,8 @@ func apply_steering(steer,delta):
 	
 func on_checkpoint(checkpoint_number):
 	if checkpoint_number == 0 and last_Checkpoint == total_checkpoint:
+		lap_counter.text = "Lap : " + str(laps)
 		laps +=1
+		
 		print("lap", laps )
 		last_Checkpoint = checkpoint_number
