@@ -51,6 +51,13 @@ position = Vector2(179.99997, 139.99998)
 scale = Vector2(2.1444042, 1.8641304)
 sprite_frames = SubResource("SpriteFrames_7vrkn")
 
+[node name="Label" type="Label" parent="VBoxContainer/AnimatedSprite2D" unique_id=1457798320]
+offset_left = -264.40912
+offset_top = -167.37025
+offset_right = -100.26097
+offset_bottom = -134.1108
+text = "Godot Aventure"
+
 [node name="Button" type="Button" parent="VBoxContainer" unique_id=528910019]
 layout_mode = 2
 size_flags_vertical = 3
