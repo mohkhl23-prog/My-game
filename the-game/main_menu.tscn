@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://eblmtwvktgo7"]
 
 [ext_resource type="Texture2D" uid="uid://bovd64gc5emve" path="res://Game assets/backdrop.png" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://oq0k7dn1shf7" path="res://main_menu.gd" id="1_7vrkn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7vrkn"]
 animations = [{
@@ -35,6 +36,7 @@ anchor_bottom = 1.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_7vrkn")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=728333720]
 layout_mode = 1
@@ -127,3 +129,7 @@ theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 text = "Exit"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_pressed"]
