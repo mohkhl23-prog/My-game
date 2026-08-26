@@ -6475,10 +6475,10 @@ size = Vector2(20, 112)
 size = Vector2(143.5, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_we0q0"]
-size = Vector2(449, 175.5)
+size = Vector2(448, 173)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e8t5x"]
-size = Vector2(363.24646, 211.48907)
+size = Vector2(448, 173)
 
 [node name="Racetrack" type="Node2D" unique_id=773539794]
 position = Vector2(-1, 0)
@@ -6573,7 +6573,7 @@ text = "Lap : 1"
 position = Vector2(504, 314)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1346657188]
-position = Vector2(-6.5, -1.75)
+position = Vector2(-10, 2)
 shape = SubResource("RectangleShape2D_we0q0")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1851624409]
@@ -6602,12 +6602,12 @@ position = Vector2(-10, 2)
 shape = SubResource("RectangleShape2D_e8t5x")
 
 [node name="StaticBody2D5" type="StaticBody2D" parent="." unique_id=1641655219]
-position = Vector2(889, 319)
-rotation = -2.083592
+position = Vector2(894, 349)
+rotation = -1.9990889
 scale = Vector2(2.8000002, 0.15999985)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5" unique_id=119903197]
-position = Vector2(-5.4474344, 3.7064285)
+position = Vector2(-10, 2)
 shape = SubResource("RectangleShape2D_e8t5x")
 
 [node name="StaticBody2D6" type="StaticBody2D" parent="." unique_id=1141184966]
@@ -6616,7 +6616,5 @@ rotation = -4.364723
 scale = Vector2(2.8000002, 0.15999985)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6" unique_id=942961229]
-position = Vector2(-36.421547, 101.72705)
-rotation = -0.0037241068
-scale = Vector2(0.9439497, 1)
+position = Vector2(-10, 2)
 shape = SubResource("RectangleShape2D_e8t5x")

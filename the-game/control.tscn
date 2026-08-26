@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bfse5jwc0wyjl"]
+
+[node name="Control" type="Control" unique_id=701110512]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1945957317]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=547017825]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=1115511241]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=1022434128]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2145664297]
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D" unique_id=1096057330]
